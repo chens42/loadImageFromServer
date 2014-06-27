@@ -1,6 +1,7 @@
 package com.example.loadimagefromserver.app.activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,11 +12,8 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
-import android.widget.ImageView;
-import android.widget.Spinner;
-import android.widget.Toast;
 
-import com.example.loadimagefromserver.app.ImageHolder;
+import com.example.loadimagefromserver.app.holder.ImageHolder;
 import com.example.loadimagefromserver.app.R;
 import com.example.loadimagefromserver.app.model.Picture;
 import com.nostra13.universalimageloader.cache.memory.impl.FIFOLimitedMemoryCache;
@@ -43,7 +41,6 @@ public class MainActivity extends Activity {
     private GridViewAdapter imageAdapter;
     private List<Picture> pictureList = new ArrayList<Picture>();
     private int counter = 1;
-    private Spinner spinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +61,6 @@ public class MainActivity extends Activity {
 
         ImageLoader.getInstance().init(config);
 
-        spinner = (Spinner) findViewById(R.id.spinner);
         new getContent().execute();
         GridView gridView = (GridView) findViewById(R.id.imageContainer);
         imageAdapter = new GridViewAdapter(pictureList);
@@ -72,17 +68,15 @@ public class MainActivity extends Activity {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(MainActivity.this, "" + position, Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this,ImageViewActivity.class);
+                intent.putExtra(ImageViewActivity.INDEX,position);
+                intent.putParcelableArrayListExtra(ImageViewActivity.LIST_NAME, (ArrayList<? extends android.os.Parcelable>) pictureList);
+                startActivity(intent);
             }
         });
     }
 
     public class getContent extends AsyncTask<Void, Void, Picture[]> {
-        @Override
-        protected void onPreExecute() {
-            spinner.setVisibility(View.VISIBLE);
-            super.onPreExecute();
-        }
 
         @Override
         protected Picture[] doInBackground(Void... params) {
@@ -114,10 +108,8 @@ public class MainActivity extends Activity {
 
         @Override
         protected void onPostExecute(Picture[] pictures) {
-            spinner.setVisibility(View.GONE);
             imageAdapter.addPictures(pictures);
         }
-
     }
 
     @Override
@@ -158,8 +150,8 @@ public class MainActivity extends Activity {
             } else {
                 holder = (ImageHolder) cell.getTag();
             }
-            ImageView imageView = holder.getImageView();
             ImageLoader.getInstance().displayImage(String.format(IMAGE_URL, pictures.get(position).getImage()), holder.getImageView());
+            holder.getTextView().setText(pictures.get(position).getCountry());
             return cell;
         }
 

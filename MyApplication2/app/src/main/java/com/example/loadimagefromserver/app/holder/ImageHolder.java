@@ -1,9 +1,11 @@
-package com.example.loadimagefromserver.app;
+package com.example.loadimagefromserver.app.holder;
 
 
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.loadimagefromserver.app.R;
 
 public class ImageHolder {
     private ImageView imageView;
