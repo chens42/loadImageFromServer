@@ -14,6 +14,7 @@ import android.widget.GridView;
 
 import com.example.loadimagefromserver.app.NextPage;
 import com.example.loadimagefromserver.app.R;
+import com.example.loadimagefromserver.app.common.HttpConstant;
 import com.example.loadimagefromserver.app.holder.ImageHolder;
 import com.example.loadimagefromserver.app.http.listener.OnPicturesLoadListener;
 import com.example.loadimagefromserver.app.model.Picture;
@@ -29,7 +30,6 @@ import java.util.List;
 
 public class MainActivity extends Activity implements OnPicturesLoadListener {
 
-    private final String IMAGE_URL = "http://192.168.1.5:8080/images/%s";
     private GridViewAdapter imageAdapter;
     private List<Picture> pictureList = new ArrayList<Picture>();
     private int counter = 1;
@@ -123,7 +123,7 @@ public class MainActivity extends Activity implements OnPicturesLoadListener {
             } else {
                 holder = (ImageHolder) cell.getTag();
             }
-            ImageLoader.getInstance().displayImage(String.format(IMAGE_URL, pictures.get(position).getImage()), holder.getImageView());
+            ImageLoader.getInstance().displayImage(String.format(HttpConstant.IMAGE_URL, pictures.get(position).getImage()), holder.getImageView());
             holder.getTextView().setText(pictures.get(position).getCountry());
             return cell;
         }

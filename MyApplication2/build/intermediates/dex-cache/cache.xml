@@ -8,17 +8,11 @@
         revision="19.1.0"
         sha1="1ee2f2bed0e5dd29d1cb155a166e6f8d50bbddb7"/>
     <item
-        dex="/home/shaojin/dev/loadImageFromServer/MyApplication2/app/build/intermediates/pre-dexed/debug/support-v4-19.0.1-aa63551822fd6bf8b8f6114988f34c947dc97f79.jar"
-        jar="/home/shaojin/dev/android-studio/sdk/extras/android/m2repository/com/android/support/support-v4/19.0.1/support-v4-19.0.1.jar"
+        dex="/home/shaojin/dev/loadImageFromServer/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-b385384541a1f2c85a0545684e8196fd7af4e935.jar"
+        jar="/home/shaojin/dev/loadImageFromServer/MyApplication2/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/classes.jar"
         jumboMode="false"
         revision="19.1.0"
-        sha1="587da9a481ffd341d2fa091704489b89845ddacd"/>
-    <item
-        dex="/home/shaojin/dev/loadImageFromServer/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-169cac13d7e098ce68f66fec2c3851958c966dd7.jar"
-        jar="/home/shaojin/dev/loadImageFromServer/MyApplication2/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.0.1/classes.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="f71a6822470c9eb659d4f4a6cb57b780b35f058b"/>
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28"/>
     <item
         dex="/home/shaojin/dev/loadImageFromServer/MyApplication2/app/build/intermediates/pre-dexed/debug/universal-image-loader-1.9.2-2ab87cfa0cdacd5f28524ffee538a79688f10f03.jar"
         jar="/home/shaojin/.gradle/caches/modules-2/files-2.1/com.nostra13.universalimageloader/universal-image-loader/1.9.2/9e025bc5b84968e7d6ac765e660a70b3e5a87432/universal-image-loader-1.9.2.jar"
@@ -26,11 +20,35 @@
         revision="19.1.0"
         sha1="9e025bc5b84968e7d6ac765e660a70b3e5a87432"/>
     <item
+        dex="/home/shaojin/dev/loadImageFromServer/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-60ede05ac3b9c4ce8a405c24403b90978bfbbeeb.jar"
+        jar="/home/shaojin/dev/loadImageFromServer/MyApplication2/build/intermediates/exploded-aar/com.sothree.slidinguppanel/library/2.0.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="c06b7c4cbd99199a9b5881444c1d91678271d0f4"/>
+    <item
         dex="/home/shaojin/dev/loadImageFromServer/MyApplication2/app/build/intermediates/pre-dexed/debug/jackson-core-asl-1.9.13-4d008c9ba3311b399d140d9c36c3a07143e8fe51.jar"
         jar="/home/shaojin/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-core-asl/1.9.13/3c304d70f42f832e0a86d45bd437f692129299a4/jackson-core-asl-1.9.13.jar"
         jumboMode="false"
         revision="19.1.0"
         sha1="3c304d70f42f832e0a86d45bd437f692129299a4"/>
+    <item
+        dex="/home/shaojin/dev/loadImageFromServer/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-27ab766ae531c769b98d0f85b0b3e6daa323a5a7.jar"
+        jar="/home/shaojin/dev/loadImageFromServer/MyApplication2/build/intermediates/exploded-aar/com.fortysevendeg.swipelistview/swipelistview/1.0-SNAPSHOT/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="2357416d7a142b8bce7b22f645281ec6cb3cbb5e"/>
+    <item
+        dex="/home/shaojin/dev/loadImageFromServer/MyApplication2/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-eeda6c8cd9227a3bc6c3ef717038e426f9ef63a6.jar"
+        jar="/home/shaojin/dev/android-studio/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
+    <item
+        dex="/home/shaojin/dev/loadImageFromServer/MyApplication2/app/build/intermediates/pre-dexed/debug/library-2.4.0-f09685e8272c636ad32bce1568d49f8640e51181.jar"
+        jar="/home/shaojin/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb"/>
     <item
         dex="/home/shaojin/dev/loadImageFromServer/MyApplication2/app/build/intermediates/pre-dexed/debug/ormlite-core-4.48-ef214b28bc229dde5910983db242fb4eb3d8247e.jar"
         jar="/home/shaojin/.gradle/caches/modules-2/files-2.1/com.j256.ormlite/ormlite-core/4.48/e579bd2905d0399af5029aaaf9817d5fa0ca88a5/ormlite-core-4.48.jar"

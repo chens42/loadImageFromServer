@@ -2,6 +2,7 @@
 <resources>
 
     <color name="Black">#000000</color>
+    <color name="Black_10">#19000000</color>
     <color name="White">#ffffff</color>
     <color name="Gray">#C0C0C0</color>
     <color name="action_bar_background_color">#ff37373a</color>

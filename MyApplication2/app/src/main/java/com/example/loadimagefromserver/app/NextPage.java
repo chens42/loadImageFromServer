@@ -3,6 +3,7 @@ package com.example.loadimagefromserver.app;
 import android.content.Context;
 import android.os.AsyncTask;
 
+import com.example.loadimagefromserver.app.common.HttpConstant;
 import com.example.loadimagefromserver.app.http.listener.OnPicturesLoadListener;
 import com.example.loadimagefromserver.app.model.Picture;
 
@@ -19,23 +20,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NextPage extends AsyncTask<Void, Void, Picture[]> {
-    private static String URl_Fraction = "http://192.168.1.5:8080/assets?page=";
     private int counter;
     private OnPicturesLoadListener onPicturesLoadListener;
 
     private List<Picture> pictureList = new ArrayList<Picture>();
 
-    public NextPage(int counter,Context context) {
+    public NextPage(int counter, Context context) {
         this.counter = counter;
         onPicturesLoadListener = (OnPicturesLoadListener) context;
-    }
-    public List<Picture> getPictureList() {
-        return pictureList;
     }
 
     @Override
     protected Picture[] doInBackground(Void... params) {
-        String URl = URl_Fraction + counter;
+        String URl = String.format(HttpConstant.URl_Fraction, counter);
         DefaultHttpClient httpClient = new DefaultHttpClient();
         HttpGet httpGet = new HttpGet(URl);
         HttpResponse httpResponse;
@@ -60,7 +57,6 @@ public class NextPage extends AsyncTask<Void, Void, Picture[]> {
         }
         return pictures;
     }
-
 
     @Override
     protected void onPostExecute(Picture[] pictures) {

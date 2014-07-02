@@ -12,8 +12,8 @@ public class ImageHolder {
     private TextView textView;
 
     public ImageHolder(View view) {
-        imageView = (ImageView) view.findViewById(R.id.imageField);
-        textView = (TextView) view.findViewById(R.id.country);
+        imageView = (ImageView) view.findViewById(R.id.imageView);
+        textView = (TextView) view.findViewById(R.id.countryTextView);
     }
 
     public ImageView getImageView() {
