@@ -59,7 +59,6 @@ public class PictureViewActivity extends Activity implements OnPicturesLoadListe
                 if (index == imageArrayList.size() - 2) {
                     counter++;
                     new NextPage(counter, PictureViewActivity.this).execute();
-
                 }
                 change(index, true);
             }
@@ -105,6 +104,7 @@ public class PictureViewActivity extends Activity implements OnPicturesLoadListe
                     fragmentTransaction.commit();
                     mLayout.setSlidingEnabled(true);
                     mLayout.expandPanel(1.0f);
+                    mLayout.setVerticalScrollBarEnabled(true);
                 }
             }
         });

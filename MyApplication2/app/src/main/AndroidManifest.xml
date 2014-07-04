@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.PictureViewActivity"/>
+        <!--<activity android:name=".activity.PictureViewActivityListView"/>-->
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
 

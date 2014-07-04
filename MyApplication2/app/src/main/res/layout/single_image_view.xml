@@ -2,10 +2,8 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:sothree="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DemoActivity"
     android:background="#10000000">
 
     <com.sothree.slidinguppanel.SlidingUpPanelLayout
@@ -16,7 +14,7 @@
         sothree:panelHeight="68dp"
         sothree:shadowHeight="4dp"
         sothree:paralaxOffset="100dp"
-        sothree:dragView="@+id/dragView">
+        sothree:dragView="@+id/voidTextView">
 
         <!-- MAIN CONTENT -->
         <LinearLayout
@@ -29,7 +27,6 @@
                 android:layout_height="match_parent"
                 android:id="@+id/fragmentContainer" />
         </LinearLayout>
-
         <!-- SLIDING LAYOUT -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -66,13 +63,21 @@
                     android:paddingRight="10dp"
                     android:paddingLeft="10dp"
                     android:text="comment" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/voidTextView" />
             </LinearLayout>
 
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/slideUpShow"
-                android:background="#10000000" />
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/slideUpShow"
+                    android:background="#10000000" />
+
         </LinearLayout>
     </com.sothree.slidinguppanel.SlidingUpPanelLayout>
 
