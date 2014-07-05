@@ -6,9 +6,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.loadimagefromserver.app.MyAdapter;
 import com.example.loadimagefromserver.app.NextPage;
 import com.example.loadimagefromserver.app.R;
 import com.example.loadimagefromserver.app.common.HttpConstant;
@@ -22,22 +22,23 @@ import java.util.Collections;
 import java.util.List;
 
 import se.emilsjolander.stickylistheaders.StickyListHeadersAdapter;
+import se.emilsjolander.stickylistheaders.StickyListHeadersListView;
 
 
 public class PictureViewActivityListView extends Activity implements OnPicturesLoadListener {
 
     private List<Picture> list=new ArrayList<Picture>();
-    private ListViewAdapter listViewAdapter;
-    private ListView listView;
+    private MyAdapter listViewAdapter;
+    private StickyListHeadersListView stickyListHeadersListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.picture_view_activity_list_view);
-        new NextPage(0,this).execute();
-        listViewAdapter=new ListViewAdapter(list);
-        listView= (ListView) findViewById(R.id.pictureViewActivityListView);
-        listView.setAdapter(listViewAdapter);
+        new NextPage(1,this).execute();
+        listViewAdapter=new MyAdapter(getApplicationContext(),list);
+        stickyListHeadersListView = (StickyListHeadersListView) findViewById(R.id.pictureViewActivityListView);
+        stickyListHeadersListView.setAdapter(listViewAdapter);
     }
 
     @Override
@@ -88,4 +89,5 @@ public class PictureViewActivityListView extends Activity implements OnPicturesL
             return  pictures.get(i).getCountry().subSequence(0, 1).charAt(0);
         }
     }
+
 }

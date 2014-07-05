@@ -68,14 +68,14 @@ public class MainActivity extends Activity implements OnPicturesLoadListener {
             }
         });
 
-/*        gridView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+        gridView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent=new Intent(MainActivity.this,PictureViewActivityListView.class);
                 startActivity(intent);
                 return true;
             }
-        });*/
+        });
     }
 
     @Override
@@ -142,4 +142,5 @@ public class MainActivity extends Activity implements OnPicturesLoadListener {
             notifyDataSetChanged();
         }
     }
+
 }
