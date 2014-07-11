@@ -14,17 +14,17 @@
         revision="19.1.0"
         sha1="3c304d70f42f832e0a86d45bd437f692129299a4"/>
     <item
-        dex="/home/shaojin/dev/loadImageFromServer/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-27ab766ae531c769b98d0f85b0b3e6daa323a5a7.jar"
-        jar="/home/shaojin/dev/loadImageFromServer/MyApplication2/build/intermediates/exploded-aar/com.fortysevendeg.swipelistview/swipelistview/1.0-SNAPSHOT/classes.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="2357416d7a142b8bce7b22f645281ec6cb3cbb5e"/>
-    <item
         dex="/home/shaojin/dev/loadImageFromServer/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-8aef6726d3d4f7bfe19f333958d9cb5441917745.jar"
         jar="/home/shaojin/dev/loadImageFromServer/MyApplication2/build/intermediates/exploded-aar/se.emilsjolander/stickylistheaders/2.4.1/classes.jar"
         jumboMode="false"
         revision="19.1.0"
         sha1="a6f266a9ae5273ae08a1d758e6a05c927690f19f"/>
+    <item
+        dex="/home/shaojin/dev/loadImageFromServer/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-27ab766ae531c769b98d0f85b0b3e6daa323a5a7.jar"
+        jar="/home/shaojin/dev/loadImageFromServer/MyApplication2/build/intermediates/exploded-aar/com.fortysevendeg.swipelistview/swipelistview/1.0-SNAPSHOT/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="69fc7aa97aa8e4e90c732695fa9df43588f0177b"/>
     <item
         dex="/home/shaojin/dev/loadImageFromServer/MyApplication2/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-eeda6c8cd9227a3bc6c3ef717038e426f9ef63a6.jar"
         jar="/home/shaojin/dev/android-studio/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
